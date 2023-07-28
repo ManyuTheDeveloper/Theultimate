@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Manish Srivastava</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Manyu's Web</title>
+
+    <style>
+
+        #logo {
+
+            text-align: center;
+
+        }
+
+        #logo img {
+
+            width: 150px;
+
+        }
+
+        #searchBar {
+
+            text-align: center;
+
+            margin-top: 20px;
+
+        }
+
+        #searchInput {
+
+            padding: 5px;
+
+            font-size: 16px;
+
+            width: 300px;
+
+        }
+
+        #searchButton {
+
+            padding: 5px 10px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+    <script>
+
+        function redirectToBing() {
+
+            var searchQuery = document.getElementById("searchInput").value;
+
+            var bingURL = "https://www.bing.com/search?q=" + encodeURIComponent(searchQuery);
+
+            window.location.href = bingURL;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="logo">
+
+        <img src="path/to/your-logo.png" alt="Manyu's Web Logo">
+
+    </div>
+
+    <div id="searchBar">
+
+        <input type="text" id="searchInput" placeholder="Search">
+
+        <button id="searchButton" onclick="redirectToBing()">Search</button>
+
+    </div>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
